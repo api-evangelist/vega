@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.vega.io/ + https://trust.vega.io/ (probed 2026-07-21)
+status_page:
+  url: https://status.vega.io/
+  platform: incident.io
+  title: Vega Status
+  components:
+  - API
+  - Analytics
+  - Index
+  - Login
+  - Portal
+  - UI
+  machine_readable:
+  - url: https://status.vega.io/api/v2/status.json
+    format: statuspage-compatible JSON (probed 200, 2026-07-21)
+  - url: https://status.vega.io/api/v2/summary.json
+    format: statuspage-compatible JSON (probed 200, 2026-07-21)
+  - url: https://status.vega.io/feed.rss
+    format: application/rss+xml (probed 200, 2026-07-21)
+sla:
+  published: true
+  url: https://trust.vega.io/
+  notes: A Service-Level Agreement document is listed on the SafeBase trust center
+    (available on request); no public uptime commitment page.
+versioning:
+  policy: null
+  notes: No public API versioning policy; developer documentation at docs.vega.io
+    is login-gated (probed 2026-07-21).
+deprecation:
+  policy: null
+  sunset_headers: null
+  notes: No public deprecation policy or RFC 8594 Sunset header documentation found.
+deprecated_operations: []

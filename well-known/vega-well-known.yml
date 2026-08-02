@@ -1,0 +1,60 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes 2026-07-21
+notes: No publicly readable well-known documents. All vega.io endpoints return 404;
+  app.vega.io serves every well-known path as a 302 redirect to /login (auth-gated
+  SPA), so nothing was saved verbatim. docs.vega.io also redirects to login.
+probes:
+- host: vega.io
+  path: /.well-known/security.txt
+  status: 404
+- host: vega.io
+  path: /.well-known/openid-configuration
+  status: 404
+- host: vega.io
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: vega.io
+  path: /.well-known/api-catalog
+  status: 404
+- host: vega.io
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: vega.io
+  path: /llms.txt
+  status: 404
+- host: vega.io
+  path: /security.txt
+  status: 404
+- host: app.vega.io
+  path: /.well-known/security.txt
+  status: 302
+  redirect: /login?redirectTo=%2F.well-known%2Fsecurity.txt
+- host: app.vega.io
+  path: /.well-known/openid-configuration
+  status: 302
+  redirect: login
+- host: app.vega.io
+  path: /.well-known/oauth-authorization-server
+  status: 302
+  redirect: login
+- host: app.vega.io
+  path: /.well-known/api-catalog
+  status: 302
+  redirect: login
+- host: app.vega.io
+  path: /.well-known/ai-plugin.json
+  status: 302
+  redirect: login
+- host: trust.vega.io
+  path: /.well-known/security.txt
+  status: 404
+- host: blog.vega.io
+  path: /.well-known/security.txt
+  status: 200
+  note: soft-200 — Hugo site returns HTML page, not a security.txt (probed 2026-07-21)
+- host: threats.vega.io
+  path: /.well-known/security.txt
+  status: 200
+  note: soft-200 — Astro site returns HTML catch-all, not a security.txt (probed 2026-07-21)
+files: []

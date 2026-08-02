@@ -1,9 +1,25 @@
 aid: vega
 name: Vega
-description: 'Vega is a company surfaced as a portfolio company of crv, pantera-capital, redpoint-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: Vega (vega.io) is the operating system for agentic SecOps, a post-SIEM
+  security operations platform whose Security Analytics Mesh (SAM) powers AI-native
+  federated detection, agentic triage, and analytics on every security data source
+  in place, with no ingestion or migration. Founded in 2024 and backed by Cyberstarts,
+  Accel, Redpoint, and CRV, Vega raised $120M (announced September 2025) and continuously
+  assesses detection coverage against MITRE ATT&CK. The platform is sales-led; its
+  application and developer documentation sit behind a customer login.
 url: https://raw.githubusercontent.com/api-evangelist/vega/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68791f04ead01339340acbbe/687e5eab154f5a8607c2f647_webclip.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,11 +28,23 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Security
+- Security Operations
+- SIEM
+- Cybersecurity
+- Artificial Intelligence
+- Threat Detection
+- Threat Intelligence
 - Developer Tools
 apis: []
 maintainers:
@@ -27,3 +55,29 @@ maintainers:
 common:
 - type: Website
   url: https://vega.io/
+- type: Blog
+  url: https://vega.io/blog
+- type: BlogRSS
+  url: https://blog.vega.io/index.xml
+- type: GitHubOrganization
+  url: https://github.com/vegasecurity
+- type: StatusPage
+  url: https://status.vega.io/
+- type: PrivacyPolicy
+  url: https://vega.io/privacy-policy
+- type: TrustCenter
+  url: security/vega-trust-center.yml
+- type: Compliance
+  url: security/vega-trust-center.yml
+- type: DomainSecurity
+  url: security/vega-domain-security.yml
+- type: Conformance
+  url: conformance/vega-conformance.yml
+- type: Lifecycle
+  url: lifecycle/vega-lifecycle.yml
+- type: WellKnown
+  url: well-known/vega-well-known.yml
+- type: LLMsTxt
+  url: llms/vega-llms.txt
+- type: MCPServer
+  url: mcp/vega-mcp.yml
