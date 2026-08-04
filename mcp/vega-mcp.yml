@@ -3,7 +3,8 @@ method: searched
 source: https://vega.io/blog/mcp-security-operations-implementations (official Vega
   engineering post, 2026-04-09; verified 2026-07-21)
 name: Vega MCP
-status: documented
+status: published
+status_raw: documented
 access: customer-gated
 transport: null
 endpoint: null
