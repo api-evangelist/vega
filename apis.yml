@@ -64,6 +64,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Documentation
+  url: https://docs.vega.io/
+- type: Login
+  url: https://app.vega.io/
+- type: TermsOfService
+  url: https://legal.vega.io/
+- type: About
+  url: https://vega.io/about
+- type: Careers
+  url: https://vega.io/careers
+- type: Partners
+  url: https://vega.io/partners
 - type: Website
   url: https://vega.io/
 - type: Blog
